@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delivery_list</title>
+</head>
+<body>
+    <header> 
+        
+        <div id="logo">
+            <a href="#"><h1>all that food!</h1></a>
+        </div>
+        <nav>
+     
+            <ul id="menu">
+                <li><a href="#">for me</a></li>
+                <li><a href="#">for guest</a></li>
+                <li><a href="#">specials</a></li>
+                <li><a href="html_exercise3.html" target="_blank">shopping</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <img src="image_food/fresh_food.jpg" alt="신선한 음식" width="100%">
+    <!--img
+    하위 폴더인 경우 file_name/img_name.jpg
+    사진인 경우 img_name.jpg로 작성
+    
+    png : 투명한 배경 + 다양한 색상
+    jpg : 작업 반복시 화질 떨어짐 
+
+    % : 창 너비, 높이를 기준으로 결정 
+    px : 해당 픽셀 크기로 표시 -->
+    
+    <main class="shop_list">
+        <h1>fresh food for fresh meal</h1>
+        <p><b>쇼핑 목록</b></p>
+
+        <table>
+            <caption>배달 예정 상품</caption>
+            <!--caption
+            표 제목-->
+            <!--caption 다음 colgroup, col tag를 씀 
+            시작되기 전 열의 상태 알려줌 
+        -->
+            <colgroup>
+                <col style="background-color:antiquewhite;">
+                <!--첫번째 열의 배경색 -->
+                <col> 
+                <!--style 지정하지 않더라도 개수만큼 col을 써줌-->
+                <col style="width:150px;"> 
+                <!--세번째 col의 style 지정-->
+                <col style="width:150px;">
+
+            </colgroup>
+            <thead>
+                <tr>
+                    <!--tr:행 지정
+                    th:셀 지정 -->
+                    <th>상품명</th> <!--1행 1열-->
+                    <th>개수</th> <!--1행 2열-->
+                    <th>가격</th>
+                    <th>배달 상태</th>
+                
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">얼그레이 티백</td>
+                    <!--rowspan
+                    row 기준 셀 합침 (위아래)-->
+                    <td rowspan="3">1개</td>
+                    <td>2000원</td>
+                    <td>배달 준비</td>
+                    
+                    
+                    
+
+                </tr>
+                <tr>
+                    <td colspan="2">품목 일시 품절</td>
+                    <!--colspan
+                    col 기준 셀 합침(좌우)-->
+                </tr>
+            
+                <tr>
+                    <td>신선한 우유</td>
+                    
+                    <td>4000원</td>
+                    <td>배달 중</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                주문 후 24시간 내 배송 완료됩니다
+            </tfoot>
+            
+        </table>
+    </main>
+    <footer>
+        <div id="bottom_Menu">
+            <ul>
+                <li><a href="#">company</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">q&a</a></li>
+                <li><a href="#">review</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

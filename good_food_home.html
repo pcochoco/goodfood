@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음식 메뉴 추천</title>
+</head>
+<body>
+    <header> 
+        <!--semantic tag: 의미론적 태그 
+        필요 내용 쉽게 검색하도록 함 -->
+
+        <!--header
+        맨위, 왼쪽 : 검색, 사이트 메뉴 -->
+        <div id="logo">
+            <a href="#"><h1>all that food!</h1></a>
+        </div>
+        <nav>
+            <!--nav 
+            웹 문서 안에서 다른 위치,문서로 연결
+            위치상 독립적 사용 가능-->
+            <ul id="menu">
+                <li><a href="#">for me</a></li>
+                <li><a href="#">for guest</a></li>
+                <li><a href="#">specials</a></li>
+                <li><a href="html_exercise3.html" target="_blank">shopping</a></li>
+                <!--target="_blank"
+                연결된 문서가 새 탭에서 열림-->
+            </ul>
+        </nav>
+    </header>
+    <main class="contents">
+        <!--main
+        핵심 콘텐츠-->
+        <section id="our_food">
+            <!--section
+            몇개의 콘텐츠를 묶음-->
+            <h2>건강한 먹거리</h2>
+            <p>우리 아이들의 입으로 들어갈</p>
+            <p>정직한 조리방식을 담았습니다</p>
+
+        </section>
+        <section id="healthy_mind">
+            <h2>마음의 치유</h2>
+            <p>맛있는 한끼로</p>
+            <!--br
+            빈 줄이 실제로 생기는 것이 아니므로
+            css 적용 시 문제 -> p 사용 -->
+            마음까지 따뜻하도록 해보세요</p>
+            <blockquote><strong>all that food!</strong></blockquote>
+            <!--strong : 굵게 강조하는 경우
+            b : 단순히 굵게 표시하는 경우 -->
+        </section>
+        <article>
+            <!--article
+            독립된 콘텐츠(블로그 포스트)-->
+            <em>오늘의 추천</em>
+            <!--em : 이탤릭체로 강조
+            i : 이탤릭체로 표시-->
+
+        </article>
+    </main>
+    <footer>
+        <!--footer
+        저작권 정보, 연락처 등-->
+        <div id="bottom_Menu">
+            <ul>
+                <li><a href="#">company</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">q&a</a></li>
+                <li><a href="#">review</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
